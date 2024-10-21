@@ -1,0 +1,171 @@
+/* Global reset remains unchanged */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* List styles remain unchanged */
+li {
+    list-style: none;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* Header-left styles with increased font size and changed color */
+.header-left {
+    color: #eef1f5; 
+    font-size: 35px; /* Increased from 30px */
+}
+
+/* Header-right styles remain unchanged */
+.header-right {
+    display: flex;
+    gap: 20px;
+    color: #f8f4f4;
+}
+
+.list {
+    display: flex;
+}
+
+.list li {
+    margin-right: 10px;
+}
+
+/* Nowpage style with changed color */
+.nowpage {
+    color: rgb(240, 135, 135); 
+}
+
+/* Main styles remain unchanged */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    min-width: 800px;
+}
+
+/* Contact form styles with a card-like design and shadow */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    max-width: 600px; /* Limit the maximum width */
+    padding: 40px; /* Adjusted padding for a card effect */
+    background-color: #ececec; 
+    color: #242323;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Form title styles with larger font and centered within the form */
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #9c9fa1; /* Dark grey color */
+}
+
+/* Form item styles now inline, with horizontal spacing */
+.form-item {
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align vertically */
+    padding: 10px 0; /* Reduced vertical padding */
+    font-weight: normal; /* Normal weight */
+}
+
+/* Label styles for form items */
+.form-item label {
+    margin-right: 10px; /* Spacing between label and input */
+    font-size: 16px; /* Larger font size */
+    color: #6c757d; /* Dark grey color */
+}
+
+/* Input text styles with reduced width and responsive design */
+input[type="text"], textarea {
+    width: 100%;
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 4px;
+    padding: 6px 12px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #495057; /* Dark grey color */
+}
+
+/* Input submit styles with a primary button design */
+input[type="submit"] {
+    margin-top: 30px;
+    width: 100%; /* Full width to fit within the flex container */
+    border: none; /* Remove border */
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer; 
+    transition: background-color .15s ease-in-out; 
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+
+/* Footer styles remain unchanged */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #dddddd;
+}
+
+/* Footer-left styles remain unchanged */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #0f0f0f;
+}
+
+/* Footer-left li styles remain unchanged */
+.footer-left li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #808080;
+}
+
+/* Like-box styles remain unchanged */
+.like-box {
+    padding: 30px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+

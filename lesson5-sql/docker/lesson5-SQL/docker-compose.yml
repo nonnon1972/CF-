@@ -1,0 +1,19 @@
+#カリキュラム生の方々は、下記のコードを絶対に触らないでください！
+
+version: "3"
+services:
+  db:
+    build: .
+    environment:
+      MYSQL_ROOT_PASSWORD: "center1234"
+      MYSQL_DATABASE: "development"
+      MYSQL_USER: "cfStudent"
+      MYSQL_PASSWORD: "center1234"
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+volumes:
+  db-data:
+

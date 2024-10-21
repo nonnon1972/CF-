@@ -1,0 +1,33 @@
+<!-- resources/views/contacts/index.blade.php -->
+@extends('layouts.app')
+
+@section('content')
+    <h1>Contacts</h1>
+    <a class="btn btn-primary">新規作成</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>名前の表示</td>
+                    <td>携帯番号の表示</td>
+                    <td>E-maileの表示</td>
+                    <td>
+                        <a class="btn btn-primary">Edit</a>
+                        <!-- 削除ボタンを追加 -->
+                        <form style="display: inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+@endsection

@@ -1,0 +1,15 @@
+<!-- resources/views/contacts/edit.blade.php -->
+@extends('layouts.app')
+
+@section('content')
+    <h1>Edit Contact</h1>
+    <form>
+        <label for="name">Name:</label>
+        <!-- この行に名前のinputを追加 -->
+        <label for="phone_number">Phone Number:</label>
+        <!-- この行に電話番号のinputを追加 -->
+        <label for="email">Email:</label>
+        <!-- この行にメールアドレスのinputを追加 -->
+        <button type="submit">Update</button>
+    </form>
+@endsection
