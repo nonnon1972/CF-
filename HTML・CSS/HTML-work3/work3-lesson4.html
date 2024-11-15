@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--ここにCSSファイルを読み込む処理を記述-->
     <link rel="stylesheet" href="work3-lesson4.css">
     <title>work3-lesson4</title>
+    <style>
+        /* ヘッダーのスタイル */
+        header {
+            background-color: aquamarine;
+            height: 100px;
+            width: 100%;
+            display: flex;
+        }
+
+        header img {
+            height: 100%; /* 画像の高さをヘッダーと同じにする */
+            width: auto; /* 横幅は自動調整 */
+        }
+
+        /* 見出しとリストを横並びにする */
+        .header-container {
+            display: flex; /* 横並びにする */
+            align-items:end; /* 縦方向に中央寄せ */
+        }
+
+        /* 見出しのスタイル */
+        h1 {
+            font-size: 20px;
+            margin-right: 650px; /* 見出しとリストの間にスペース */
+        }
+
+        /* リスト全体のスタイル */
+        ul {
+            display: flex; /* 横並びにする */
+            padding: 0; /* デフォルトのパディングを無効に */
+            list-style-type: none; /* デフォルトのリストスタイルを無効に */
+        }
+
+        /* リスト項目のスタイル */
+        li {
+            margin-right: 10px; /* 項目間に10pxのスペースを追加 */
+        }
+    </style>
 </head>
 <body>
-     <!--
+
+    <!-- ヘッダー -->
+    <header>
+        <img src="image/logo.jpg" alt="ロゴ"> <!-- ロゴ画像 -->
+    
+        <!-- 見出しとリストをヘッダー内に横並びで配置 -->
+        <div class="header-container">
+            <h1>Center Force</h1> <!-- 見出し -->
+            <ul>
+                <li>トップページ</li>
+                <li>概要</li>
+                <li>事業紹介</li>
+                <li>社員紹介</li>
+                <li>お問合せ</li>
+            </ul>
+        </div>
+    </header>
+<!--
         課題：教材サイトの見本画像と同じページを作成しよう(ロゴは　HTML・CSS/HTML-work3/imageフォルダのを使用)
         - ヘッダーの背景色は aquamarine で指定
         - ヘッダーは高さ100px 横幅100% 画像は高さ100%を指定
@@ -18,8 +72,5 @@
         [わからない部分は自分で検索しましょう(HTML margin 適応されない等)]
         課題の条件が満たせていることを確認して、このファイルを提出してください。
     -->
-<div>
-
-
 </body>
-</html> 
+</html>
