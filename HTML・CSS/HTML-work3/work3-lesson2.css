@@ -1,0 +1,58 @@
+/* 基本のリセット */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* コンテナの設定 */
+.container {
+    display: flex;
+    justify-content: flex-start; /* 水平方向の左寄せ */
+    padding: 10px;
+}
+
+/* タイトル（h1）のスタイル */
+.title {
+    width: 500px;
+    height: 42px;
+    background-color: red;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start; /* 水平方向の左寄せ */
+    padding-left: 10px; /* 左寄せの余白調整 */
+    margin: 0;
+}
+
+/* メニューのスタイル */
+.menu {
+    list-style-type: none; /* 黒点を非表示 */
+    margin: 0;
+    padding: 0;
+    display: flex; /* 横並び */
+    margin-left: 30px;
+    justify-content: flex-start; /* 水平方向の左寄せ */
+    align-items: flex-end; /* 各項目を下部に揃える */
+}
+
+.menu li {
+    width: 200px;
+    height: 25px; /* 高さを固定 */
+    background-color: red;
+    color: black;
+    text-align: left; /* テキストを左寄せ */
+    padding-left: 10px; /* 左寄せの余白調整 */
+    display: flex-end; /* 子要素の配置調整を可能にする */
+    align-items: flex-end; /* テキストを下部に揃える */
+    margin-left: 10px; /* メニュー間の余白 */
+    font-size: 18px;
+}
+<!--headerタグの中に記載して下さい！
+        課題：① h1要素とul要素のリストを横並びで表示。
+        
+        課題：② h1要素を幅500px、高さ42px、背景色を赤色に変更。
+        - li要素の横幅を各200pxへ。背景を赤色に変更。
+        - li要素の黒点（・）を非表示に  ※HTML li 黒点 非表示 などで検索
+        課題の条件が満たせていることを確認して、このファイルを提出してください。
+    -->
