@@ -1,2 +1,48 @@
+/* ヘッダーのスタイル */
+header {
+    background-color: aquamarine;
+    height: 100px;
+    width: 100%;
+    display: flex; /* 横並びにする */
+    align-items: flex-end; /* 子要素を下端に揃える */
+    padding: 0 20px; /* ヘッダー内の左右余白 */
+}
 
+/* ロゴ画像のスタイル */
+header img {
+    height: 100%; /* 画像の高さをヘッダーと同じにする */
+    width: auto; /* 横幅は自動調整 */
+}
 
+/* 見出しとリストを横並びにし、下部で揃える */
+.header-container {
+    display: flex; /* 横並びにする */
+    justify-content: space-between; /* 見出しとリストを左右に分ける */
+    align-items: flex-end; /* 下端に揃える */
+    width: 100%; /* ヘッダー内で全幅を使用 */
+    margin-left: 20px; /* ロゴと見出しの間の余白 */
+    padding-bottom: 10px; /* 下端から10px上に配置 */
+}
+
+/* 見出しのスタイル */
+h1 {
+    font-size: 20px;
+    margin: 0; /* デフォルトの余白を無効化 */
+}
+
+/* リスト全体のスタイル */
+ul {
+    display: flex; /* 横並びにする */
+    padding: 0; /* デフォルトのパディングを無効化 */
+    list-style-type: none; /* デフォルトのリストスタイルを無効化 */
+    margin: 0;
+}
+
+/* リスト項目のスタイル */
+li {
+    margin-right: 10px; /* 項目間に10pxのスペースを追加 */
+}
+
+li:last-child {
+    margin-right: 0; /* 最後の項目の余白を削除 */
+}
