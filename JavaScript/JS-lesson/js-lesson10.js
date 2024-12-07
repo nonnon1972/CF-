@@ -1,6 +1,6 @@
 //youageの値を好きな数字に変更してどうなるか試してみましょう！
 
-let youage =24;
+let youage =28;
 let centerforce = youage < 26;
 
 if (centerforce) {

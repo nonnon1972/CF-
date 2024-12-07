@@ -1,3 +1,3 @@
-const test ='letは「変数」constは「定数」と覚えましょう!';
+const test ='dog';
 
-test = '再代入できないよ！';
+test = '';
