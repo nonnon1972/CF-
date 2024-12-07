@@ -1,6 +1,6 @@
 //jankenの値を好きな’チョキ’と’パー’に変更してどうなるか試してみましょう！
 
-let janken ='グー';
+let janken ='チョキ';
 
 if (janken=='チョキ') {
   console.log('私の手はチョキです！');

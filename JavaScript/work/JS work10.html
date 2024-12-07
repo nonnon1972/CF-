@@ -26,6 +26,29 @@
                 上記の条件に一致しない曜日が渡された場合、デフォルトのメッセージ "無効な入力です。" を返します。
         */
 
+        // 定数 project を作成し、曜日を設定
+        const project = "土"; // 好きな曜日を設定 ("月", "火", ... "日")
+
+        // switch 文を使用して曜日に基づいたメッセージを出力
+        switch (project) {
+            case "月":
+                console.log("月曜日は始まりの曜日です！");
+                break;
+            case "火":
+            case "水":
+            case "木":
+            case "金":
+                console.log(`${project}曜日は進行中の曜日です！`);
+                break;
+            case "土":
+            case "日":
+                console.log(`${project}曜日は休みの曜日です！`);
+                break;
+            default:
+                console.log("無効な入力です。");
+        }
+
+
         //下記からコードを記述してください。
     </script>
 </body>

@@ -1,6 +1,6 @@
 //好きに値を変えて試してみてね！！
 
-const pokemon ='冬にタンクトップのおじさん';
+const pokemon ='ニャース';
 
 switch(pokemon){
     case 'ポッチャマ':
