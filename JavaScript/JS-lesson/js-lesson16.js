@@ -19,3 +19,4 @@ tamagoyaki('おりゃ～～～!!');
 tamagoyaki('まじ、ウケる');
 
 //４回目（下記に記述してね！）
+tamagoyaki('しかないっしょ！');
