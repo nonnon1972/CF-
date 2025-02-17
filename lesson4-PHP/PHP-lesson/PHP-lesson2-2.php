@@ -35,6 +35,38 @@
     */
 
     //この下に記述してください
+    // 商品の価格（例: 4000円）
+    $product_price = 4000;
+
+    // 所持金（2万円）
+    $money = 20000;
+
+    // お釣りを計算
+    $change = $money - $product_price;
+
+    echo "商品の値段：{$product_price}円<br><br>";
+    echo "おつり内訳<br>";
+
+    // 紙幣・硬貨の種類（大きい順）
+    $bills = [
+        "五千円札" => 5000,
+        "千円札" => 1000,
+        "500円玉" => 500,
+        "100円玉" => 100,
+        "50円玉" => 50,
+        "10円玉" => 10,
+        "5円玉" => 5,
+        "1円玉" => 1
+    ];
+
+    // 各紙幣・硬貨の枚数を計算
+    foreach ($bills as $name => $value) {
+        if ($change >= $value) {
+            $count = floor($change / $value); // 何枚必要か計算
+            $change -= $count * $value; // お釣りから引く
+            echo "{$name}　{$count}枚<br>";
+        }
+    }
 
     
 ?>

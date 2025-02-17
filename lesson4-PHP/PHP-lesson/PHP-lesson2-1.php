@@ -60,7 +60,30 @@
 
     //この下に記述してください
 
-    
+     // うるう年を判定する関数
+     function isLeapYear($year) {
+        if ($year % 400 == 0) {
+            return true;
+        } elseif ($year % 100 == 0) {
+            return false;
+        } elseif ($year % 4 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // 現在の年を取得
+    $currentYear = date("Y");
+
+    // 1900年から現在の年までを判定
+    for ($year = 1900; $year <= $currentYear; $year++) {
+        if (isLeapYear($year)) {
+            echo "{$year}年はうるう年です。<br>";
+        } else {
+            echo "{$year}年はうるう年ではありません。<br>";
+        }
+    }
 ?>
 <div>
 </body>
